@@ -1,0 +1,6 @@
+number   : /-?[0-9]+/ ;
+symbol   : '+' | '-' | '*' | '/' ;
+atom     : <number> | <symbol> ;
+expr     : <atom> | <list> ;
+list     : '(' <expr>* ')';
+lisp     : /^/ <expr> /$/ ;

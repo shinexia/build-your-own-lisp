@@ -1,0 +1,4 @@
+lisp
+*.o
+src/grammar_txt.c
+.vscode
